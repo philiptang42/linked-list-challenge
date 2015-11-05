@@ -29,4 +29,16 @@ class LinkedList
     end
     @result
   end
+
+  def to_s
+    string = "LinkedList("
+    self.each do |n|
+      string.concat(n.info + ", ")
+    end
+
+    string.chop!.chop! if string.end_with?(", ")
+
+    string + ")"
+  end
+  
 end
