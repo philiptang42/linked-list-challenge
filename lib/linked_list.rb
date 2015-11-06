@@ -40,5 +40,15 @@ class LinkedList
 
     string + ")"
   end
-  
+
+  def insert(index, data)
+   new_node = Node.new(data, self[index])
+
+   if index == 0
+     @head = new_node
+   else
+     self[index - 1].next_node = new_node
+   end
+ end
+
 end
