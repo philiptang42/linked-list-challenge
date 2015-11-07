@@ -58,5 +58,4 @@ class LinkedList
      self[index - 1].next_node = self[index + 1]
    end
  end
-
 end
