@@ -51,4 +51,12 @@ class LinkedList
    end
  end
 
+ def remove(index)
+   if index == 0
+     @head = self[1]
+   else
+     self[index - 1].next_node = self[index + 1]
+   end
+ end
+
 end
